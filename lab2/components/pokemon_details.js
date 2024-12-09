@@ -5,14 +5,16 @@ function PokemonDetails({ pokemon }) {
 
   return (
     <div id="pokemonDetails" onMouseLeave={() => {
-      const infoDiv = document.getElementById('pokemon-info');
-      infoDiv.style.display = 'none';
+      const divId = document.getElementById('pokemon-info');
+      const divId2 = document.getElementById('pokemonDetailsContent');
+      divId2.style.display = 'none';
+      divId.style.display = 'none';
     }}>
       <div id="pokemonDetailsContent">
         <h2>{pokemon.name}</h2>
         <img id="pokemon-image" src={pokemon.sprites.front_default} alt={pokemon.name} onClick={() => {
-          const infoDiv = document.getElementById('pokemon-info');
-          infoDiv.style.display = 'block';
+          const divId = document.getElementById('pokemon-info');
+          divId.style.display = divId.style.display === "block" ? "none" : "block";
         }}/>
         <p>Number: {pokemon.id}</p>
       </div>

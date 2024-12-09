@@ -58,8 +58,8 @@ body {
               border: 1px solid #ddd;
               border-radius: 4px;
             }
-            > li:nth-child(-n+20){
-              display: block;
+            > li:nth-child(n+21) {
+              display: none;
             }
           }
         }
