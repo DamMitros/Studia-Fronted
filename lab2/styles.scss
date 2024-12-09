@@ -1,0 +1,95 @@
+body {
+  background-color: #B4DD1E;
+  > header {
+    text-align: center;
+    font-size: 2rem;
+    > h1 {
+      font-family: 'Helvetica Neue', sans-serif;
+      color: #313b31;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  > main {
+    > div {
+      > input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        box-sizing: border-box;
+      }
+      > #boxy {
+        display: flex;
+        margin: 0 5% 0 5%;
+        > #pokemonList, #pokemonDetails {
+          flex-basis: 37%;
+          margin: 3rem 3rem 0 3rem;
+          width: 10rem; 
+          height: auto;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 35px;
+          background-color: #f9f9f9;
+          text-align: center;
+          box-shadow: 0 4px 8px rgba(18, 17, 17, 0);
+          transition: transform 1s, box-shadow 1s;
+          &:hover {
+            flex-basis: 60%;  
+          }
+          > a {
+            font-size: 30px;
+            font-weight: bold;
+          }
+        }
+        > #pokemonList {
+          > ul {
+            max-height: 380px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            overflow-y: auto;
+            max-lines: 20;
+            > li {
+              cursor: pointer;
+              padding: 8px;
+              margin: 5px 0;
+              border: 1px solid #ddd;
+              border-radius: 4px;
+            }
+            > li:nth-child(-n+20){
+              display: block;
+            }
+          }
+        }
+        &:hover {
+          transform: translateX(50px);
+        }
+        > #pokemonDetails {
+          > #pokemonDetailsContent {
+            > h2 {
+              font-weight: bold;
+            }
+            > img {
+              width: 225px;
+              transition: width 0.5s;
+            }
+            &:hover img {
+              width: 150px;
+            }
+          }
+          > p {
+            font-size: 10px;
+          }
+          &:hover {
+            transform: translateX(-50px);
+          }
+        }
+        &:hover {
+          transform: translateX(50px);
+        }
+      }
+    }
+  }
+}

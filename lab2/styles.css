@@ -1,0 +1,84 @@
+body {
+  background-color: #B4DD1E;
+}
+body > header {
+  text-align: center;
+  font-size: 2rem;
+}
+body > header > h1 {
+  font-family: "Helvetica Neue", sans-serif;
+  color: #313b31;
+  margin-bottom: 0.5rem;
+}
+body > main > div > input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+body > main > div > #boxy {
+  display: flex;
+  margin: 0 5% 0 5%;
+}
+body > main > div > #boxy > #pokemonList, body > main > div > #boxy #pokemonDetails {
+  flex-basis: 37%;
+  margin: 3rem 3rem 0 3rem;
+  width: 10rem;
+  height: auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 35px;
+  background-color: #f9f9f9;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(18, 17, 17, 0);
+  transition: transform 1s, box-shadow 1s;
+}
+body > main > div > #boxy > #pokemonList:hover, body > main > div > #boxy #pokemonDetails:hover {
+  flex-basis: 60%;
+}
+body > main > div > #boxy > #pokemonList > a, body > main > div > #boxy #pokemonDetails > a {
+  font-size: 30px;
+  font-weight: bold;
+}
+body > main > div > #boxy > #pokemonList > ul {
+  max-height: 380px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  max-lines: 20;
+}
+body > main > div > #boxy > #pokemonList > ul > li {
+  cursor: pointer;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+body > main > div > #boxy > #pokemonList > ul > li:nth-child(-n+20) {
+  display: block;
+}
+body > main > div > #boxy:hover {
+  transform: translateX(50px);
+}
+body > main > div > #boxy > #pokemonDetails > #pokemonDetailsContent > h2 {
+  font-weight: bold;
+}
+body > main > div > #boxy > #pokemonDetails > #pokemonDetailsContent > img {
+  width: 225px;
+  transition: width 0.5s;
+}
+body > main > div > #boxy > #pokemonDetails > #pokemonDetailsContent:hover img {
+  width: 150px;
+}
+body > main > div > #boxy > #pokemonDetails > p {
+  font-size: 10px;
+}
+body > main > div > #boxy > #pokemonDetails:hover {
+  transform: translateX(-50px);
+}
+body > main > div > #boxy:hover {
+  transform: translateX(50px);
+}/*# sourceMappingURL=styles.css.map */
