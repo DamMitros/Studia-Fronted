@@ -6,8 +6,6 @@ function PokemonDetails({ pokemon }) {
   return (
     <div id="pokemonDetails" onMouseLeave={() => {
       const divId = document.getElementById('pokemon-info');
-      const divId2 = document.getElementById('pokemonDetailsContent');
-      divId2.style.display = 'none';
       divId.style.display = 'none';
     }}>
       <div id="pokemonDetailsContent">

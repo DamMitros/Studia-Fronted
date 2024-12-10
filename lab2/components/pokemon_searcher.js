@@ -7,7 +7,7 @@ function PokemonSearcher({ search, onSearch }) {
   return (
     <input
       type="text"
-      class="search"
+      className="search"
       placeholder="Wyszukaj swojego Pokemona"
       value={search}
       onChange={handleInputChange}
