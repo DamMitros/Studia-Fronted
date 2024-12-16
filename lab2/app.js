@@ -3,6 +3,7 @@ let pokemons = [];
 let selectedPokemon = null;
 let search = "";
 let isLoading = false;
+let isInfoVisible = false; 
 
 function App() {
   async function getPokemonList() {
@@ -43,7 +44,7 @@ function App() {
     pokemons = allPokemons.filter((pokemon) =>
       pokemon.name.toLowerCase().includes(searchValue.toLowerCase())
     );
-    ReactDOM.render(<App />, document.getElementById("app"));
+    ReactDOM.render(<App data={pokemons} />, document.getElementById("app"));
   }
 
   React.useEffect(() => {
