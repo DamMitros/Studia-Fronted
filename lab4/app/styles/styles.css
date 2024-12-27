@@ -1,0 +1,266 @@
+body {
+  background-color: #F6AC43;
+  font-size: 2rem;
+}
+body > nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  background-color: #3d7dca;
+}
+body > nav > h1 {
+  font-family: "Helvetica Neue", sans-serif;
+  color: #fcf40d;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+}
+body > nav > a {
+  font-family: "Helvetica Neue", sans-serif;
+  color: #ccc842;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1.35rem;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+body > nav > a:hover {
+  background-color: #003a70;
+}
+body > main, body div {
+  text-align: center;
+}
+body > main > p, body div > p {
+  font-size: 3rem;
+  color: #003a70;
+}
+body > main > img, body div > img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+}
+body > main > div > section {
+  text-align: center;
+}
+body > main > div > section > nav {
+  margin: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+body > main > div > section > nav > input {
+  width: 40%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+body > main > div > section > nav > input.number {
+  width: 20%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+body > main > div > section > nav > select {
+  width: 20%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+body > main > div > section > ul {
+  margin: 0 6%;
+  max-height: 380px;
+  list-style: none;
+  padding: 0;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #3d7dca #f6ac43;
+}
+body > main > div > section > ul > li {
+  display: flex;
+  background-color: white;
+  cursor: pointer;
+  padding: 8px;
+  margin: 5px 5px;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+body > main > div > section > ul > li > a {
+  margin: auto 0;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #3d7dca;
+  width: 80%;
+}
+body > main > div > section > ul > li > button {
+  width: 20%;
+  padding: 0.5rem 1rem;
+  border: 1rem;
+  border-radius: 5px;
+  background-color: #3d7dca;
+  color: white;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+body > main > div > section > ul > li > button:hover {
+  background-color: #003a70;
+}
+body > main > div > section > div {
+  text-align: center;
+}
+body > main > div > section > div > nav {
+  margin: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+body > main > div > section > div > nav > input {
+  width: 40%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+body > main > div > section > div > nav > input.number {
+  width: 20%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+body > main > div > section > div > nav > select {
+  width: 20%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+body > main > div > section > div > ul {
+  margin: 0 6%;
+  max-height: 380px;
+  list-style: none;
+  padding: 0;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #3d7dca #f6ac43;
+}
+body > main > div > section > div > ul > li {
+  background-color: white;
+  cursor: pointer;
+  padding: 8px;
+  margin: 5px 5px;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+body > main > div > section > div > ul > li > a {
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #3d7dca;
+}
+body > main > div > section > div > nav {
+  text-align: left;
+  margin-top: 3rem;
+}
+body > main > div > section > div > nav > a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #003a70;
+}
+body > main > div > section > div > main > div {
+  display: flex;
+  align-items: center;
+  margin: 1.6rem 20%;
+}
+body > main > div > section > div > main > div > div {
+  margin: 0 1rem;
+  height: 400px;
+  padding: 1rem;
+  border: 2px solid #3d7dca;
+  border-radius: 10px;
+  background-color: rgba(61, 124, 202, 0.1411764706);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, flex 0.3s ease;
+}
+body > main > div > section > div > main > div > div:hover {
+  transform: scale(1.05);
+}
+body > main > div > section > div > main > div > div > h2 {
+  font-weight: bold;
+  color: #003a70;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+body > main > div > section > div > main > div > div > img {
+  width: 225px;
+  transition: width 0.5s;
+  border-radius: 5px;
+}
+body > main > div > section > div > main > div > div > img:hover {
+  width: 250px;
+}
+body > main > div > section > div > main > div > div > a {
+  color: #003a70;
+  margin: 1rem;
+  font-size: 2rem;
+}
+body > main > div > section > div > main > div > div > button {
+  padding: 0.5rem 1rem;
+  border: 1rem;
+  border-radius: 5px;
+  margin: 0 1rem 0.5rem 1rem;
+  background-color: #3d7dca;
+  color: white;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+body > main > div > section > div > main > div > div > button:hover {
+  background-color: #003a70;
+}
+body > main > div > section > div > main > div > div > p {
+  margin: 1rem;
+  color: #003a70;
+  font-size: 2.5rem;
+}
+body > main > div > section > div > main > div:only-child > div {
+  flex: 2;
+}
+body > main > div > h1 {
+  font-size: 3rem;
+  color: #003a70;
+  margin-left: -8rem;
+}
+body > main > div > section > p {
+  font-size: 2.5rem;
+  color: #003a70;
+  margin-left: -6rem;
+}/*# sourceMappingURL=styles.css.map */
