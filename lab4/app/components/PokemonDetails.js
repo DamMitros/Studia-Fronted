@@ -45,9 +45,7 @@ export default function PokemonDetails({ pokemon }) {
           <a>ID: {pokemon.id}</a>
           <img src={pokemon.sprites.front_default} alt={pokemon.name} />
           <button onClick={handleComparisonChange}>
-            {comparisonList.some((p) => p.name === pokemon.name)
-              ? "Usuń z porównania"
-              : "Porównaj"}
+            {comparisonList.some((p) => p.name === pokemon.name) ? "Usuń z porównania" : "Porównaj"}
           </button>
           <button onClick={handleFavoritesChange}>
             {favorites.includes(pokemon.name) ? 'Usuń z ulubionych' : 'Dodaj do ulubionych'}

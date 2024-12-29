@@ -8,7 +8,6 @@ export default function Filter({ types, onFiltersChange }) {
   const localStorageKey = "pokemonFilters";
 
   useEffect(() => {
-    // Inicjalizacja filtrów z LocalStorage
     const storedFilters = localStorage.getItem(localStorageKey);
     if (storedFilters) {
       const parsedFilters = JSON.parse(storedFilters);

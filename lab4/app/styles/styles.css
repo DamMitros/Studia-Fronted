@@ -44,6 +44,76 @@ body > main > img, body div > img {
   display: block;
   margin: 0 auto;
 }
+body > main > nav > section, body div > nav > section {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 80px;
+  margin-top: 7rem;
+  background-color: #3d7dca;
+  padding: 0.25rem;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: 2rem;
+}
+body > main > nav > section > span, body div > nav > section > span {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #003a70;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+body > main > nav > section > span > div, body div > nav > section > span > div {
+  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+body > main > nav > section > span > div > a, body div > nav > section > span > div > a {
+  text-decoration: none;
+  color: #ccc842;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+body > main > nav > section > span > div > a:hover, body div > nav > section > span > div > a:hover {
+  color: #fcf40d;
+}
+body > main > nav > section > span > div > button, body div > nav > section > span > div > button {
+  margin: 0 0.25rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(212, 72, 72, 0.9803921569);
+  font-size: 1.25rem;
+  transition: background-color 0.3s ease;
+}
+body > main > nav > section > span > div > button:hover, body div > nav > section > span > div > button:hover {
+  background-color: #ed0202;
+}
+body > main > nav > section > span > img, body div > nav > section > span > img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: -1rem auto;
+}
+body > main > nav > section > div, body div > nav > section > div {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  color: #fcf40d;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+  transition: background-color 0.3s ease;
+}
+body > main > nav > section > div:hover, body div > nav > section > div:hover {
+  background-color: #003a70;
+}
 body > main > div > section {
   text-align: center;
 }
@@ -85,7 +155,7 @@ body > main > div > section > nav > select {
 }
 body > main > div > section > ul {
   margin: 0 6%;
-  max-height: 380px;
+  height: 330px;
   list-style: none;
   padding: 0;
   overflow-y: auto;
@@ -127,7 +197,7 @@ body > main > div > section > div {
   text-align: center;
 }
 body > main > div > section > div > nav {
-  margin: 2rem;
+  margin: 0.5rem 2rem;
   text-align: center;
   display: flex;
   justify-content: space-between;
@@ -164,7 +234,7 @@ body > main > div > section > div > nav > select {
 }
 body > main > div > section > div > ul {
   margin: 0 6%;
-  max-height: 380px;
+  height: 330px;
   list-style: none;
   padding: 0;
   overflow-y: auto;
@@ -186,6 +256,76 @@ body > main > div > section > div > ul > li > a {
   text-decoration: none;
   color: #3d7dca;
 }
+body > main > div > section > div > section {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 80px;
+  margin-top: 1.5rem;
+  background-color: #3d7dca;
+  padding: 0.25rem;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: 2rem;
+}
+body > main > div > section > div > section > span {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #003a70;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+body > main > div > section > div > section > span > div {
+  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+body > main > div > section > div > section > span > div > a {
+  text-decoration: none;
+  color: #ccc842;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+body > main > div > section > div > section > span > div:hover {
+  color: #fcf40d;
+}
+body > main > div > section > div > section > span > div > button {
+  margin: 0 0.25rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(212, 72, 72, 0.9803921569);
+  font-size: 1.25rem;
+  transition: background-color 0.3s ease;
+}
+body > main > div > section > div > section > span > div > button:hover {
+  background-color: #ed0202;
+}
+body > main > div > section > div > section > span > img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: -1rem auto;
+}
+body > main > div > section > div > section > div {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  color: #fcf40d;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+  transition: background-color 0.3s ease;
+}
+body > main > div > section > div > section > div:hover {
+  background-color: #003a70;
+}
 body > main > div > section > div > nav {
   text-align: left;
   margin-top: 3rem;
@@ -196,6 +336,76 @@ body > main > div > section > div > nav > a {
   text-decoration: none;
   color: #003a70;
 }
+body > main > div > section > div > nav > section {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 80px;
+  margin-top: -2.3rem;
+  background-color: #3d7dca;
+  padding: 0.25rem;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: 2rem;
+}
+body > main > div > section > div > nav > section > span {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #003a70;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+body > main > div > section > div > nav > section > span > div {
+  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+body > main > div > section > div > nav > section > span > div > a {
+  text-decoration: none;
+  color: #ccc842;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+body > main > div > section > div > nav > section > span > div:hover {
+  color: #fcf40d;
+}
+body > main > div > section > div > nav > section > span > div > button {
+  margin: 0 0.25rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(212, 72, 72, 0.9803921569);
+  font-size: 1.25rem;
+  transition: background-color 0.3s ease;
+}
+body > main > div > section > div > nav > section > span > div > button:hover {
+  background-color: #ed0202;
+}
+body > main > div > section > div > nav > section > span > img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: -1rem auto;
+}
+body > main > div > section > div > nav > section > div {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  color: #fcf40d;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+  transition: background-color 0.3s ease;
+}
+body > main > div > section > div > nav > section > div:hover {
+  background-color: #003a70;
+}
 body > main > div > section > div > main > div {
   display: flex;
   align-items: center;
@@ -203,7 +413,7 @@ body > main > div > section > div > main > div {
 }
 body > main > div > section > div > main > div > div {
   margin: 0 1rem;
-  height: 400px;
+  height: 390px;
   padding: 1rem;
   border: 2px solid #3d7dca;
   border-radius: 10px;
@@ -212,7 +422,7 @@ body > main > div > section > div > main > div > div {
   transition: transform 0.3s ease, flex 0.3s ease;
 }
 body > main > div > section > div > main > div > div:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 body > main > div > section > div > main > div > div > h2 {
   font-weight: bold;
@@ -263,4 +473,164 @@ body > main > div > section > p {
   font-size: 2.5rem;
   color: #003a70;
   margin-left: -6rem;
+}
+body > main > div > div > nav > section {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 80px;
+  background-color: #3d7dca;
+  padding: 0.25rem;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: 2rem;
+  margin-top: 1.4rem;
+}
+body > main > div > div > nav > section > span {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #003a70;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+body > main > div > div > nav > section > span > div {
+  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+body > main > div > div > nav > section > span > div > a {
+  text-decoration: none;
+  color: #ccc842;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+body > main > div > div > nav > section > span > div:hover {
+  color: #fcf40d;
+}
+body > main > div > div > nav > section > span > div > button {
+  margin: 0 0.25rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(212, 72, 72, 0.9803921569);
+  font-size: 1.25rem;
+  transition: background-color 0.3s ease;
+}
+body > main > div > div > nav > section > span > div > button:hover {
+  background-color: #ed0202;
+}
+body > main > div > div > nav > section > span > img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: -1rem auto;
+}
+body > main > div > div > nav > section > div {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  color: #fcf40d;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+  transition: background-color 0.3s ease;
+}
+body > main > div > div > nav > section > div:hover {
+  background-color: #003a70;
+}
+body > main > div > section > div > h1 {
+  font-size: 2.5rem;
+  color: #003a70;
+  margin-bottom: 1rem;
+}
+body > main > div > section > div > div {
+  display: flex;
+  justify-content: space-around;
+}
+body > main > div > section > div > div > div {
+  height: 350px;
+  width: 40%;
+  background-color: rgba(61, 124, 202, 0.1411764706);
+  border: 2px solid #3d7dca;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+body > main > div > section > div > div > div:hover {
+  transform: scale(1.05);
+}
+body > main > div > section > div > div > div > h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+body > main > div > section > div > div > div > h2 > a {
+  color: #3d7dca;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+body > main > div > section > div > div > div > h2 > a:hover {
+  color: #003a70;
+}
+body > main > div > section > div > div > div > div {
+  display: flex;
+  justify-content: space-between;
+}
+body > main > div > section > div > div > div > div > img {
+  width: 270px;
+  height: 300px;
+}
+body > main > div > section > div > div > div > div > div > p {
+  margin: 2.4rem 0;
+  font-size: 1.5rem;
+  color: #003a70;
+}
+body > main > div > section > div > div > div > div > ul {
+  list-style: none;
+  padding: 0;
+}
+body > main > div > section > div > div > div > div > ul > p {
+  font-size: 1.5rem;
+  color: #003a70;
+  margin: 0 1rem;
+}
+body > main > div > section > div > div > div > div > ul > li {
+  font-size: 1.25rem;
+  color: #003a70;
+  margin-bottom: 0.5rem;
+}
+body > main > div > section > div > div > div > button {
+  margin-top: -2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #3d7dca;
+  color: white;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+body > main > div > section > div > div > div > button:hover {
+  background-color: #003a70;
+}
+body > main > div > section > div > button {
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #3d7dca;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+body > main > div > section > div > button:hover {
+  background-color: #003a70;
 }/*# sourceMappingURL=styles.css.map */
