@@ -1,0 +1,789 @@
+body {
+  background-color: #F6AC43;
+  font-size: 2rem;
+  // HOME PAGE
+  > nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    background-color: #3d7dca;
+    > h1 {
+      font-family: 'Helvetica Neue', sans-serif;
+      color: #fcf40d;
+      margin-right: 15%;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+    }
+    > a {
+      font-family: 'Helvetica Neue', sans-serif;
+      color: #ccc842;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      font-size: 1.35rem;
+      transition: background-color 0.3s ease;
+      font-weight: bold;
+      &:hover {
+        background-color: #003a70;
+      }
+    }
+  }
+  > main, div {
+    text-align: center;
+    > p {
+      font-size: 3rem;
+      color:#003a70;
+    }
+    > img {
+      width: 200px;
+      height: 200px;
+      display: block;
+      margin: 0 auto;
+    }
+    > nav > section {
+      display: flex;
+      width: fit-content;
+      height: 80px; 
+      margin-top: 7rem;
+      background-color: #3d7dca;
+      padding: 0.25rem;
+      border-radius: 10px;
+      font-weight: bold;
+      margin-left: auto;
+      margin-right: 2rem;
+      > span {
+      > div {
+        > a{
+          text-decoration: none;
+          color: #ccc842;
+          font-size: 1.5rem;
+          font-weight: bold;
+          &:hover {
+            color: #fcf40d;
+          }
+        }
+        > button {
+        margin: 0 0.25rem;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        background-color: #d44848fa;
+        font-size: 1.25rem;
+        transition: background-color 0.3s ease;
+        &:hover {
+          background-color: #ed0202;
+        }
+        }
+        margin-left: 0.5rem;
+        display: flex;
+        flex-direction: row;
+      }
+      > img {
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin: -1rem auto;
+      }
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+      background-color: #003a70;
+      padding: 0.5rem;
+      font-size: 1.5rem;
+      margin: 0.5rem;
+      }
+      > div{
+      display: flex;
+      flex-direction: column;
+      font-size: 0.9rem;
+      color: #fcf40d;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      margin: 0.5rem 0;
+      transition: background-color 0.3s ease;
+        &:hover {
+          background-color: #003a70;
+        }
+      }
+    }
+  }
+  // END OF HOME PAGE
+  // POKEMON LIST PAGE AND Favorites??
+  > main > div > section{
+    text-align: center;
+    > nav {
+      margin: 2rem;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      > input {
+        width: 40%;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        box-sizing: border-box;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+      }
+      > input.number {
+        width: 20%;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        box-sizing: border-box;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+      }
+      > select {
+        width: 20%;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        box-sizing: border-box;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+      }
+    }
+    > ul {
+      margin: 0 6%;
+      height: 500px;
+      list-style: none;
+      padding: 0;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: #3d7dca #f6ac43;
+      > li {
+        display:flex;
+        > a{
+          margin: auto 0;
+          align-items: center;
+          font-size: 1.5rem;
+          font-weight: bold;
+          text-decoration: none;
+          color: #3d7dca;
+          width: 80%;
+        }
+        > button {
+          width: 20%;
+          padding: 0.5rem 1rem;
+          border: 1rem;
+          border-radius: 5px;
+          background-color: #3d7dca;
+          color: white;
+          font-size: 1.5rem;
+          transition: background-color 0.3s ease;
+          &:hover {
+            background-color: #003a70;
+          }
+            }
+        background-color: white;
+        cursor: pointer;
+        padding: 8px;
+        margin: 5px 5px;
+        border: 1px solid white;
+        border-radius: 4px;
+      }
+    }
+  }
+  > main > div > section > div{
+    text-align: center;
+    > nav {
+      margin: 0.5rem 2rem;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      > input {
+        width: 40%;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        box-sizing: border-box;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+      }
+      > input.number {
+        width: 20%;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        box-sizing: border-box;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+      }
+      > select {
+        width: 20%;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        box-sizing: border-box;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+      }
+    }
+    > ul {
+      margin: 0 6%;
+      height: 500px;
+      list-style: none;
+      padding: 0;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: #3d7dca #f6ac43;
+      > li {
+        > a{
+          align-items: center;
+          font-size: 1.5rem;
+          font-weight: bold;
+          text-decoration: none;
+          color: #3d7dca;
+        }
+        background-color: white;
+        cursor: pointer;
+        padding: 8px;
+        margin: 5px 5px;
+        border: 1px solid white;
+        border-radius: 4px;
+      }
+    }
+  }
+  > main > div> section> div> section{
+    display: flex;
+    width: fit-content;
+    height: 80px; 
+    margin-top: 1.5rem;
+    background-color: #3d7dca;
+    padding: 0.25rem;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: 2rem;
+    > span {
+    > div {
+      > a{
+        text-decoration: none;
+        color: #ccc842;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      &:hover {
+        color: #fcf40d;
+      }
+      > button {
+      margin: 0 0.25rem;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      background-color: #d44848fa;
+      font-size: 1.25rem;
+      transition: background-color 0.3s ease;
+      &:hover {
+        background-color: #ed0202;
+      }
+      }
+      margin-left: 0.5rem;
+      display: flex;
+      flex-direction: row;
+    }
+    > img {
+      width: 50px;
+      height: 50px;
+      display: block;
+      margin: -1rem auto;
+    }
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #003a70;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    }
+    > div{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    color: #fcf40d;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    transition: background-color 0.3s ease;
+      &:hover {
+        background-color: #003a70;
+      }
+    }
+  }
+  // END OF POKEMON LIST PAGE
+  // POKEMON DETAILS PAGE
+  > main > div > section > div {
+    > nav {
+      text-align: left;
+      margin-top: 3rem;
+      >a{
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: #003a70;
+      }
+    > section {
+      display: flex;
+      width: fit-content;
+      height: 80px; 
+      margin-top: -2.3rem;
+      background-color: #3d7dca;
+      padding: 0.25rem;
+      border-radius: 10px;
+      font-weight: bold;
+      margin-left: auto;
+      margin-right: 2rem;
+      > span {
+      > div {
+        > a{
+          text-decoration: none;
+          color: #ccc842;
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+        &:hover {
+          color: #fcf40d;
+        }
+        > button {
+        margin: 0 0.25rem;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        background-color: #d44848fa;
+        font-size: 1.25rem;
+        transition: background-color 0.3s ease;
+        &:hover {
+          background-color: #ed0202;
+        }
+        }
+        margin-left: 0.5rem;
+        display: flex;
+        flex-direction: row;
+      }
+      > img {
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin: -1rem auto;
+      }
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+      background-color: #003a70;
+      padding: 0.5rem;
+      font-size: 1.5rem;
+      margin: 0.5rem;
+      }
+      > div{
+      display: flex;
+      flex-direction: column;
+      font-size: 0.9rem;
+      color: #fcf40d;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      margin: 0.5rem 0;
+      transition: background-color 0.3s ease;
+        &:hover {
+          background-color: #003a70;
+        }
+      }
+    }
+    }
+    > main {
+      display: flex;
+      > section {
+        >h2{
+          font-size: 2rem;
+          color: #003a70;
+          margin-bottom: 0.25rem;
+        }
+        width: 45%;
+
+        margin-left: auto;
+        >div{
+          label{
+            font-size: 1.5rem;
+            color: #003a70;
+            margin-bottom: 0.5rem;
+          }
+          select{
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            box-sizing: border-box;
+            margin-bottom: 1rem;
+            margin-left: 1rem;
+          }
+        }
+        >button{
+          height: fit-content;
+          padding: 0.5rem 1rem;
+          border: none;
+          border-radius: 5px;
+          background-color: #3d7dca;
+          color: white;
+          font-size: 1.5rem;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          &:hover {
+            background-color: #003a70;
+          }
+        }
+        >ul{
+          margin: 0 6%;
+          height: 440px;
+          list-style: none;
+          padding: 0;
+          overflow-y: auto;
+          scrollbar-width: thin;
+          scrollbar-color: #3d7dca #f6ac43;
+          >li{
+            border-radius: 40px;
+            background-color: #3d7cca24;
+            border: 1px solid #003a70;
+            font-size: 1.5rem;
+            color: #003a70;
+            margin-bottom: 2rem;
+            >button{
+              margin-left: 2rem;
+              margin-bottom: 0.5rem;
+              padding: 0.5rem 1rem;
+              border: none;
+              border-radius: 5px;
+              background-color: #3d7dca;
+              color: white;
+              font-size: 1.5rem;
+              cursor: pointer;
+              transition: background-color 0.3s ease;
+              &:hover {
+                background-color: #003a70;
+              }
+            }
+          }
+        }
+      }
+      > div {
+        display: flex;
+        align-items: center;
+        margin: 1.6rem 0 0 4%;
+        > div {
+          margin: 0 1rem;
+          min-width: 300px;
+          max-width: 400px;
+          height: 390px;
+          padding: 1rem;
+          border: 2px solid #3d7dca;
+          border-radius: 10px;
+          background-color: #3d7cca24;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s ease, flex 0.3s ease;
+          &:hover {
+        transform: scale(1.03);
+          }
+          > h2 {
+        font-weight: bold;
+        color: #003a70;
+        margin-bottom: 0.5rem;
+        margin-top: 0;
+          }
+          > img {
+        width: 225px;
+        transition: width 0.5s;
+        border-radius: 5px;
+        &:hover {
+          width: 250px;
+        }
+          }
+          > a {
+        color: #003a70;
+        margin: 1rem;
+        font-size: 2rem;
+          }
+          > button {
+        padding: 0.5rem 1rem; 
+        border: 1rem;
+        border-radius: 5px;
+        margin: 0 1rem 0.5rem 1rem;
+        background-color: #3d7dca;
+        color: white;
+        font-size: 1.5rem;
+        transition: background-color 0.3s ease;
+        &:hover {
+          background-color: #003a70;
+        }
+          }
+        > p {
+          margin: 1rem;
+          color: #003a70;
+          font-size: 2.5rem;
+        }
+        }
+        &:only-child {
+          > div {
+        flex: 2;
+          }
+        }
+      }
+    }
+  }
+  // END OF POKEMON DETAILS PAGE
+  // FAVORITE PAGE
+  > main > div {
+    > h1{
+      font-size: 3rem;
+      color: #003a70;
+      margin-left: -8rem;
+    }
+    >section > p{
+      font-size: 2.5rem;
+      color: #003a70;
+      margin-left: -6rem;
+    }
+    > div > nav > section {
+      display: flex;
+      width: fit-content;
+      height: 80px; 
+      background-color: #3d7dca;
+      padding: 0.25rem;
+      border-radius: 10px;
+      font-weight: bold;
+      margin-left: auto;
+      margin-right: 2rem;
+      margin-top: 1.4rem;
+      > span {
+      > div {
+        > a{
+          text-decoration: none;
+          color: #ccc842;
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+        &:hover {
+          color: #fcf40d;
+        }
+        > button {
+        margin: 0 0.25rem;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        background-color: #d44848fa;
+        font-size: 1.25rem;
+        transition: background-color 0.3s ease;
+        &:hover {
+          background-color: #ed0202;
+        }
+        }
+        margin-left: 0.5rem;
+        display: flex;
+        flex-direction: row;
+      }
+      > img {
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin: -1rem auto;
+      }
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+      background-color: #003a70;
+      padding: 0.5rem;
+      font-size: 1.5rem;
+      margin: 0.5rem;
+      }
+      > div{
+      display: flex;
+      flex-direction: column;
+      font-size: 0.9rem;
+      color: #fcf40d;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      margin: 0.5rem 0;
+      transition: background-color 0.3s ease;
+        &:hover {
+          background-color: #003a70;
+        }
+      }
+    }
+  }
+  // END OF FAVORITE PAGE
+  // COMPARE PAGE
+  > main > div > section > div {
+    > h1 {
+      font-size: 2.5rem;
+      color: #003a70;
+      margin-bottom: 1rem;
+    }
+    > div {
+      display: flex;
+      justify-content: space-around;
+      > div {
+      height: 350px;
+      width: 40%;
+      background-color: #3d7cca24;
+      border: 2px solid #3d7dca;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: scale(1.05);
+      }
+      > h2 {
+        > a {
+            color: #3d7dca;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            &:hover {
+            color: #003a70;
+            }
+        }
+        font-size: 2rem;
+        font-weight: bold;
+
+        margin: 0;
+      }
+      >div{
+        display: flex;
+        justify-content: space-between;
+        > img {
+          width:270px;
+          height: 300px;
+        }
+        >div{
+          > p {  
+            margin: 2rem 0;
+            font-size: 1.5rem;
+            color: #003a70;
+          }
+        }
+        > ul {
+          list-style: none;
+          padding: 0;
+          > p {
+            font-size: 1.5rem;
+            color: #003a70;
+            margin: 0 1rem;
+          }
+          > li {
+          font-size: 1.25rem;
+          color: #003a70;
+          margin-bottom: 0.5rem;
+          }
+        }
+      }
+      > button {
+        margin-top: -2rem;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 5px;
+        background-color: #3d7dca;
+        color: white;
+        font-size: 1.25rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        &:hover {
+        background-color: #003a70;
+        }
+      }
+      }
+    }
+    > button {
+      margin-top: 2rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #3d7dca;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      &:hover {
+      background-color: #003a70;
+      }
+    }
+  }
+  // END OF COMPARE PAGE
+  // NOTE PAGE
+  > main > div > section > div > div > div{
+    margin-top: 2rem;
+    height: fit-content;
+    h2{
+      font-size: 2rem;
+      color: #003a70;
+      margin-bottom: 1rem;
+    }
+    form{
+      > label{
+        font-size: 1.5rem;
+        color: #003a70;
+        margin-bottom: 0.5rem;
+        display:flex ;
+        flex-direction: column;
+        > div{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+          >label{
+            font-weight: bold;
+            color: #ccc842;
+            width: 100px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 0.25rem 0.5rem;
+            font-size: 1rem;
+            background-color: #3d7dca;
+            &:hover {
+              background-color: #003a70;
+            }
+          }
+        }
+        > input, textarea, select {
+          padding: 0.25rem;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 1rem;
+          margin-bottom: 0.25rem;
+          margin-right: 3rem;
+        }
+      }
+      button{
+        margin: 1rem;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 5px;
+        background-color: #3d7dca;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        &:hover {
+          background-color: #003a70;
+        }
+      }
+    }
+  }
+  // END OF NOTE PAGE
+}
