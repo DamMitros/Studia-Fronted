@@ -6,8 +6,14 @@ import { useState, useEffect } from "react";
 
 export default function NotePage({ params }) {
   const [pokemonId, setPokemonId] = useState(null);
-  const queryParams = new URLSearchParams(location.search);
-  const noteId = queryParams.get("noteid"); 
+  const [noteId, setNoteId] = useState(null);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const queryParams = new URLSearchParams(window.location.search);
+      setNoteId(queryParams.get("noteid"));
+    }
+  }, []); 
 
   useEffect(() => {
     async function resolveParams() {
@@ -25,7 +31,7 @@ export default function NotePage({ params }) {
     window.location.reload();
   };
 
-  if(noteId!=null){
+  if (noteId != null) {
     return (
       <div>
         <h2>Edytuj notatkę dla Pokemona</h2>

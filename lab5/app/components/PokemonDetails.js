@@ -8,6 +8,7 @@ import NoteList from "./NoteList";
 export default function PokemonDetails({ pokemon }) {
   const [favorites, setFavorites] = useState([]);
   const [comparisonList, setComparisonList] = useState([]);
+  const [comparisonMessage, setComparisonMessage] = useState("");
   const [refreshNotes, setRefreshNotes] = useState(false);
   const handleRefreshNotes = () => setRefreshNotes((prev) => !prev);
 
@@ -36,35 +37,44 @@ export default function PokemonDetails({ pokemon }) {
   function handleComparisonChange() {
     if (comparisonList.some((p) => p.name === pokemon.name)) {
       removeFromComparisonList(pokemon.name);
-      setComparisonList(comparisonList.filter(comp => comp.name !== pokemon.name));
+      window.location.reload();
     } else {
-      addToComparisonList(pokemon);
-      setComparisonList([...comparisonList, pokemon]);
+      const result = addToComparisonList(pokemon);
+      if (result.success) {
+        setComparisonMessage("");
+        setComparisonList(getComparisonList());
+        window.location.reload();
+      } else {
+        setComparisonMessage(result.message);
+      }
     }
   }
 
   return (
-    <main>
-      <div>
-        <div onClick={handleClick}>
-          <h2>{pokemon.name}</h2>
-          <a>ID: {pokemon.id}</a>
-          <img src={pokemon.sprites.front_default} alt={pokemon.name} />
-          <button onClick={handleComparisonChange}>
-            {comparisonList.some((p) => p.name === pokemon.name) ? "Usuń z porównania" : "Porównaj"}
-          </button>
-          <button onClick={handleFavoritesChange}>
-            {favorites.includes(pokemon.name) ? 'Usuń z ulubionych' : 'Dodaj do ulubionych'}
-          </button>
+    <>
+      <main>
+        <div>
+          <div onClick={handleClick}>
+            <h2>{pokemon.name}</h2>
+            <a>ID: {pokemon.id}</a>
+            <img src={pokemon.sprites.front_default} alt={pokemon.name} />
+            <button onClick={handleComparisonChange}>
+              {comparisonList.some((p) => p.name === pokemon.name) ? "Usuń z porównania" : "Porównaj"}
+            </button>
+            <button onClick={handleFavoritesChange}>
+              {favorites.includes(pokemon.name) ? 'Usuń z ulubionych' : 'Dodaj do ulubionych'}
+            </button>
+          </div>
+          <div style={{ display: 'none' }}>
+            <p>Typ: {pokemon.types.map((type) => type.type.name).join(", ")}</p>
+            <p>Wzrost: {pokemon.height}</p>
+            <p>Waga: {pokemon.weight}</p>
+            <p>Zdolności: {pokemon.abilities.map((ability) => ability.ability.name).join(", ")}</p>
+          </div>
         </div>
-        <div style={{ display: 'none' }}>
-          <p>Typ: {pokemon.types.map((type) => type.type.name).join(", ")}</p>
-          <p>Wzrost: {pokemon.height}</p>
-          <p>Waga: {pokemon.weight}</p>
-          <p>Zdolności: {pokemon.abilities.map((ability) => ability.ability.name).join(", ")}</p>
-        </div>
-      </div>
-      <NoteList pokemonId={pokemon.id} refreshNotes={refreshNotes} onEditNote={handleRefreshNotes} />
-    </main>
+        <NoteList pokemonId={pokemon.id} refreshNotes={refreshNotes} onEditNote={handleRefreshNotes} />
+      </main>
+      {comparisonMessage && <a>{comparisonMessage}</a>}
+    </>
   );
 }
