@@ -464,6 +464,13 @@ body > main > div > section > div > main > div > div > p {
 body > main > div > section > div > main > div:only-child > div {
   flex: 2;
 }
+body > main > div > section > div > main > a {
+  margin-top: -2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ff2600;
+}
 body > main > div > h1 {
   font-size: 3rem;
   color: #003a70;
@@ -588,7 +595,7 @@ body > main > div > section > div > div > div > div > img {
   height: 300px;
 }
 body > main > div > section > div > div > div > div > div > p {
-  margin: 2.4rem 0;
+  margin: 2rem 0;
   font-size: 1.5rem;
   color: #003a70;
 }

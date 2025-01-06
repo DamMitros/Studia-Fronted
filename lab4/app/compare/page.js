@@ -32,6 +32,7 @@ export default function ComparePage() {
             <h2><a href={`/pokemon/${pokemon.name}`}>{pokemon.name}</a></h2>
             <div>
               <div>
+                <p>ID: {pokemon.id}</p>
                 <p>Typy: {pokemon.types.map((type) => type.type.name).join(", ")}</p>
                 <p>Wzrost: {pokemon.height}</p>
                 <p>Waga: {pokemon.weight}</p>

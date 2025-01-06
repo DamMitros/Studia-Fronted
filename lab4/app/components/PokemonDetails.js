@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 export default function PokemonDetails({ pokemon }) {
   const [favorites, setFavorites] = useState([]);
   const [comparisonList, setComparisonList] = useState([]);
+  const [comparisonMessage, setComparisonMessage] = useState("");
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -31,10 +32,17 @@ export default function PokemonDetails({ pokemon }) {
   function handleComparisonChange() {
     if (comparisonList.some((p) => p.name === pokemon.name)) {
       removeFromComparisonList(pokemon.name);
+      window.location.reload();
     } else {
-      addToComparisonList(pokemon);
+      const result = addToComparisonList(pokemon);
+      if (result.success) {
+        setComparisonMessage("");
+        setComparisonList(getComparisonList());
+        window.location.reload();
+      } else {
+        setComparisonMessage(result.message);
+      }
     }
-    window.location.reload();
   }
 
   return (
@@ -58,6 +66,7 @@ export default function PokemonDetails({ pokemon }) {
           <p>Zdolności: {pokemon.abilities.map((ability) => ability.ability.name).join(", ")}</p>
         </div>
       </div>
+      {comparisonMessage && <a>{comparisonMessage}</a>}
     </main>
   );
 }

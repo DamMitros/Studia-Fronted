@@ -10,8 +10,9 @@ export function addToComparisonList(pokemon) {
   if (list.length < 2) {
     list.push(pokemon);
     localStorage.setItem("comparisonList", JSON.stringify(list));
+    return { success: true };
   } else {
-    alert("Możesz porównać maksymalnie 2 Pokemony.");
+    return { success: false, message: "Możesz porównać maksymalnie 2 Pokemony." };
   }
 }
 
